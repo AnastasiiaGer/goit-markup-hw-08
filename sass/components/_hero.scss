@@ -28,28 +28,28 @@
       from(rgba(47, 48, 58, 0.4)),
       to(rgba(47, 48, 58, 0.4))
     ),
-    url("../../img/hero-img/img.min.jpg");
+    url("../img/hero-img/img.min.jpg");
 
   background-image: -o-linear-gradient(
       left,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../img/hero-img/img.min.jpg");
+    url("../img/hero-img/img.min.jpg");
 
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../img/hero-img/img.min.jpg");
+    url("../img/hero-img/img.min.jpg");
 
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    -webkit-image-set(url(../../img/hero-img/img.min.webp) 1x);
+    -webkit-image-set(url(../img/hero-img/img.min.webp) 1x);
 
   background-color: var(--background-color);
 
@@ -66,13 +66,13 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../img/hero-img/img.min.2x.jpg");
+      url("../img/hero-img/img.min.2x.jpg");
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      -webkit-image-set(url(../../img/hero-img/img.min.2x.webp) 2x);
+      -webkit-image-set(url(../img/hero-img/img.min.2x.webp) 2x);
   }
 }
 
@@ -86,19 +86,19 @@
         from(rgba(47, 48, 58, 0.4)),
         to(rgba(47, 48, 58, 0.4))
       ),
-      url("../../img/hero-img/img.md.jpg");
+      url("../img/hero-img/img.md.jpg");
     background-image: -o-linear-gradient(
         left,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../img/hero-img/img.md.jpg");
+      url("../img/hero-img/img.md.jpg");
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../img/hero-img/img.md.jpg");
+      url("../img/hero-img/img.md.jpg");
 
     background-image: -webkit-gradient(
         linear,
@@ -107,21 +107,21 @@
         from(rgba(47, 48, 58, 0.4)),
         to(rgba(47, 48, 58, 0.4))
       ),
-      -webkit-image-set(url(../../img/hero-img/img.md.webp) 1x);
+      -webkit-image-set(url(../img/hero-img/img.md.webp) 1x);
 
     background-image: -o-linear-gradient(
         left,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      -webkit-image-set(url(../../img/hero-img/img.md.webp) 1x);
+      -webkit-image-set(url(../img/hero-img/img.md.webp) 1x);
 
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      -webkit-image-set(url(../../img/hero-img/img.md.webp) 1x);
+      -webkit-image-set(url(../img/hero-img/img.md.webp) 1x);
   }
 }
 
@@ -139,19 +139,19 @@
           from(rgba(47, 48, 58, 0.4)),
           to(rgba(47, 48, 58, 0.4))
         ),
-        url("../../img/hero-img/img.md2x.jpg");
+        url("../img/hero-img/img.md2x.jpg");
       background-image: -o-linear-gradient(
           left,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../../img/hero-img/img.md2x.jpg");
+        url("../img/hero-img/img.md2x.jpg");
       background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../../img/hero-img/img.md2x.jpg");
+        url("../img/hero-img/img.md2x.jpg");
       background-image: -webkit-gradient(
           linear,
           left top,
@@ -159,19 +159,19 @@
           from(rgba(47, 48, 58, 0.4)),
           to(rgba(47, 48, 58, 0.4))
         ),
-        -webkit-image-set(url(../../img/hero-img/img.md2x.webp) 2x);
+        -webkit-image-set(url(../img/hero-img/img.md2x.webp) 2x);
       background-image: -o-linear-gradient(
           left,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        -webkit-image-set(url(../../img/hero-img/img.md2x.webp) 2x);
+        -webkit-image-set(url(../img/hero-img/img.md2x.webp) 2x);
       background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        -webkit-image-set(url(../../img/hero-img/img.md2x.webp) 2x);
+        -webkit-image-set(url(../img/hero-img/img.md2x.webp) 2x);
     }
   }
 }
@@ -186,19 +186,19 @@
         from(rgba(47, 48, 58, 0.4)),
         to(rgba(47, 48, 58, 0.4))
       ),
-      url("../../img/hero-img/img.lg.jpg");
+      url("../img/hero-img/img.lg.jpg");
     background-image: -o-linear-gradient(
         left,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../img/hero-img/img.lg.jpg");
+      url("../img/hero-img/img.lg.jpg");
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../img/hero-img/img.lg.jpg");
+      url("../img/hero-img/img.lg.jpg");
 
     background-image: -webkit-gradient(
         linear,
@@ -207,21 +207,21 @@
         from(rgba(47, 48, 58, 0.4)),
         to(rgba(47, 48, 58, 0.4))
       ),
-      -webkit-image-set(url(../../img/hero-img/img.lg.webp) 1x);
+      -webkit-image-set(url(../img/hero-img/img.lg.webp) 1x);
 
     background-image: -o-linear-gradient(
         left,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      -webkit-image-set(url(../../img/hero-img/img.lg.webp) 1x);
+      -webkit-image-set(url(../img/hero-img/img.lg.webp) 1x);
 
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      -webkit-image-set(url(../../img/hero-img/img.lg.webp) 1x);
+      -webkit-image-set(url(../img/hero-img/img.lg.webp) 1x);
   }
 }
 
@@ -239,19 +239,19 @@
           from(rgba(47, 48, 58, 0.4)),
           to(rgba(47, 48, 58, 0.4))
         ),
-        url("../../img/hero-img/Img.lg.2x.jpg");
+        url("../img/hero-img/Img.lg.2x.jpg");
       background-image: -o-linear-gradient(
           left,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../../img/hero-img/Img.lg.2x.jpg");
+        url("../img/hero-img/Img.lg.2x.jpg");
       background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../../img/hero-img/Img.lg.2x.jpg");
+        url("../img/hero-img/Img.lg.2x.jpg");
       background-image: -webkit-gradient(
           linear,
           left top,
@@ -259,19 +259,19 @@
           from(rgba(47, 48, 58, 0.4)),
           to(rgba(47, 48, 58, 0.4))
         ),
-        -webkit-image-set(url(../../img/hero-img/Img.lg.2x.webp) 2x);
+        -webkit-image-set(url(../img/hero-img/Img.lg.2x.webp) 2x);
       background-image: -o-linear-gradient(
           left,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        -webkit-image-set(url(../../img/hero-img/Img.lg.2x.webp) 2x);
+        -webkit-image-set(url(../img/hero-img/Img.lg.2x.webp) 2x);
       background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        -webkit-image-set(url(../../img/hero-img/Img.lg.2x.webp) 2x);
+        -webkit-image-set(url(../img/hero-img/Img.lg.2x.webp) 2x);
     }
   }
 }
