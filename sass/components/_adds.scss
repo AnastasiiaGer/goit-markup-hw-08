@@ -1,0 +1,116 @@
+.adds-title-main {
+  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.adds-about {
+  align-items: center;
+
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  @media screen and(min-width:1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.adds-list {
+  margin-bottom: 30px;
+  list-style-type: none;
+  
+@media screen and(max-width:479px) {
+    max-width: 450px;
+  }
+  @media screen and(min-width:480px) {
+    width: 450px;
+  }
+  @media screen and(min-width:768px) {
+    width: 354px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 270px;
+    margin-right: 30px;
+  }
+}
+
+.adds-title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--title-txt-color);
+
+  @media screen and(min-width:768px) {
+    text-align: left;
+  }
+}
+
+.adds-text {
+  
+
+  font-size: 14px;
+  line-height: 1.7;
+  /* or 171% */
+  letter-spacing: 0.03em;
+
+  color: var(--main-txt-color);
+@media screen and(max-width:479px) {
+    max-width: 450px;
+  }
+  @media screen and(min-width:480px) {
+    width: 450px;
+  }
+  @media screen and(min-width:768px) {
+    width: 354px;
+    height: 75px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 270px;
+  }
+}
+
+.adds-antenna {
+  background-color: var(--background-color-team);
+  border-radius: 4px;
+  
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+@media screen and(max-width:479px) {
+    max-width: 450px;
+  }
+
+  @media screen and(min-width:480px) {
+    width: 450px;
+  }
+  @media screen and(min-width:768px) {
+    width: 354px;
+    height: 120px;
+  }
+
+  @media screen and(min-width:1200px) {
+    width: 270px;
+    height: 120px;
+  }
+}

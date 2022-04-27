@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--нормализация стилей-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+
+    <!--стили css
+    <link rel="stylesheet" href="css/style.css" />-->
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <!--шрифты-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+      <header class="header">
+      <div class="container header__container">
+        <nav class="header__nav">
+          <a class="header__list link" href="/"
+            >Web<span class="header__list-logo">Studio</span></a
+          >
+
+          <ul class="header__nav-list list">
+            <li class="header__nav-list-item">
+              <a
+                class="header__nav-link link"
+                href="./index.html"
+              >
+                Студия
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a class="header__nav-link header__current link" href="./portfolio.html">
+                Портфолио
+              </a>
+            </li>
+            <li><a class="header__nav-link link" href=""> Контакты </a></li>
+          </ul>
+        </nav>
+        <ul class="header__info-txt list">
+          <li class="header__info-item">
+            <a class="header__info link" href="mailoto:info@devstudio.com">
+              <svg class="header__ikon-mail">
+                <use href="./img/icons.svg/icons.svg.svg#post"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a class="header__info link" href="tel:+380961111111">
+              <svg class="header__ikon-tel" width="10px" height="16px">
+                <use href="./img/icons.svg/icons.svg.svg#tel"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+
+        <button
+          class="menu-btn"
+          data-menu-button
+          type="button"
+          aria-expanded="false"
+        >
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use
+              class="menu-btn__icon-open"
+              href="./img/icons.svg/icons.svg.svg#icon-menu"
+            ></use>
+            <use
+              class="menu-btn__icon-close"
+              href="./img/icons.svg/icons.svg.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="nav-title-portfolio">Навигация</h1>
+          <ul class="buttun-list">
+            <li class="button-portfolio list">
+              <button class="button-portfolio-txt" type="button">Все</button>
+            </li>
+            <li class="button-portfolio list">
+              <button class="button-portfolio-txt txt" type="button">
+                Веб-сайты
+              </button>
+            </li>
+            <li class="button-portfolio list">
+              <button class="button-portfolio-txt" type="button">
+                Приложения
+              </button>
+            </li>
+            <li class="button-portfolio list">
+              <button class="button-portfolio-txt" type="button">Дизайн</button>
+            </li>
+            <li class="button-portfolio list">
+              <button class="button-portfolio-txt button-portfolio-sm" type="button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+
+          <ul class="portfolio">
+            <li class="potrfolio-cards list link">
+              <a class="radious link" href="">
+                <div class="portfolio-wrapper">
+
+                  <picture>
+                <!--FOR COMPUTER-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/comp/imgportfolio-lg.webp 1x,
+                    ./img/porrfolio-img/comp/imgportfolio-lg.2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/porrfolio-img/comp/imgportfolio-lg.jpg 1x,
+                    ./img/porrfolio-img/comp/imgportfolio-lg.2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <!--FOR DESCPOT-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tablet/imgportfolio-md.webp 1x,
+                    ./img/porrfolio-img/tablet/imgportfolio-md.2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tablet/img1-md.jpg 1x,
+                    ./img/porrfolio-img/tablet/imgportfolio-md.2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <!--FOR TELEPHONE-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tel/1-sm.webp 1x,
+                    ./img/porrfolio-img/tel/img1-sm.2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./img/porrfolio-img/tel/1-sm.2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                  <img class="portfolio-img"
+                    src="img/img.port.jpg"
+                    alt="Технокряк"
+                    width="450"
+                    height="249"
+                  />
+                  </picture>
+                  <p class="portfolio-info">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="portfolio-cards portfolio-second-img">
+                  <h2 class="portfolio-title">Технокряк</h2>
+                  <p class="portfolio-discription">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="potrfolio-cards list link">
+              <a class="radious link" href="">
+                <div class="portfolio-wrapper">
+                   <picture>
+                <!--FOR COMPUTER-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/comp/sport.lg.webp 1x,
+                    ./img/porrfolio-img/comp/sport.lg@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/porrfolio-img/comp/sport.lg.jpg 1x,
+                    ./img/porrfolio-img/comp/sport.lg@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <!--FOR DESCPOT-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tablet/sport.md.webp 1x,
+                    ./img/porrfolio-img/tablet/sport.md@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tablet/sport.md.jpg 1x,
+                    ./img/porrfolio-img/tablet/sport.md@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <!--FOR TELEPHONE-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tel/sport.sm.webp 1x,
+                    ./img/porrfolio-img/tel/sport.sm@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./img/porrfolio-img/tel/sport.sm@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                 <img class="portfolio-img"
+                    src="./img/porrfolio-img/tel/sport.sm.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="450"
+                    height="249"
+                  />
+                  </picture>
+                  <p class="portfolio-info">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="portfolio-cards">
+                  <h2 class="portfolio-title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="portfolio-discription">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="potrfolio-cards list link">
+              <a class="radious link" href="">
+                <div class="portfolio-wrapper">
+                  <picture>
+                <!--FOR COMPUTER-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/comp/imgseafood.lg.webp 1x,
+                    ./img/porrfolio-img/comp/imgseafood.lg2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/porrfolio-img/comp/imgseafood.lg.jpg 1x,
+                    ./img/porrfolio-img/comp/imgseafood.lg2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <!--FOR DESCPOT-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tablet/imgseafood.md.webp 1x,
+                    ./img/porrfolio-img/tablet/imgseafood.md2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tablet/imgseafood.md.jpg 1x,
+                    ./img/porrfolio-img/tablet/imgseafood.md2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <!--FOR TELEPHONE-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tel/imgseafood.sm.webp 1x,
+                    ./img/porrfolio-img/tel/imgseafood.sm2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./img/porrfolio-img/tel/imgseafood.sm2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                 <img class="portfolio-img"
+                    src="./img/porrfolio-img/tel/imgseafood.sm.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="450"
+                    height="294"  
+                  />
+                  </picture>
+                  <p class="portfolio-info">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
+                <div class="portfolio-cards">
+                  <h2 class="portfolio-title">Ресторан Seafood</h2>
+                  <p class="portfolio-discription">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="potrfolio-cards list link">
+              <a class="radious link" href="">
+                <div class="portfolio-wrapper">
+                  <picture>
+                <!--FOR COMPUTER-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/comp/imgport.lg.webp 1x,
+                    ./img/porrfolio-img/comp/imgport.lg@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/porrfolio-img/comp/imgport.lg.jpg 1x,
+                    ./img/porrfolio-img/comp/imgport.lg@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <!--FOR DESCPOT-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tablet/imgpot.md.webp 1x,
+                    ./img/porrfolio-img/tablet/imgpot.md@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tablet/imgpot.md.jpg 1x,
+                    ./img/porrfolio-img/tablet/imgpot.md@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <!--FOR TELEPHONE-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tel/imgpot.sm.webp 1x,
+                    ./img/porrfolio-img/tel/imgpot.sm@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./img/porrfolio-img/tel/imgpot.sm@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                 <img class="portfolio-img"
+                    src="./img/porrfolio-img/tel/imgpot.sm.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="450"
+                    height="294"
+                  />
+                  </picture>
+                  <p class="portfolio-info">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
+                <div class="portfolio-cards">
+                  <h2 class="portfolio-title">Проект Prime</h2>
+                  <p class="portfolio-discription">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="potrfolio-cards list link">
+              <a class="radious link" href="">
+                <div class="portfolio-wrapper">
+                  <picture>
+                <!--FOR COMPUTER-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/comp/imgbox.lg.webp 1x,
+                    ./img/porrfolio-img/comp/imgbox.lg@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./im/porrfolio-img/comp/imgbox.lg.jpg 1x,
+                    ./img/porrfolio-img/comp/imgbox.lg@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <!--FOR DESCPOT-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tablet/imgbox.md.webp 1x,
+                    ./img/porrfolio-img/tablet/imgbox.md@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tablet/imgbox.md.jpg 1x,
+                    ./img/porrfolio-img/tablet/imgbox.md@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <!--FOR TELEPHONE-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tel/imgbox.sm.webp 1x,
+                    ./img/porrfolio-img/tel/imgbox.sm@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./img/porrfolio-img/tel/imgbox.sm@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                 <img class="portfolio-img"
+                    src="./img/porrfolio-img/tel/imgbox.sm.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="450"
+                    height="294"
+                  />
+                  </picture>
+                  <p class="portfolio-info">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
+                <div class="portfolio-cards">
+                  <h2 class="portfolio-title">Проект Boxes</h2>
+                  <p class="portfolio-discription">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="potrfolio-cards list link">
+              <a class="radious link" href="">
+                <div class="portfolio-wrapper">
+                  <picture>
+                <!--FOR COMPUTER-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/comp/imgmonitor.lg.webp 1x,
+                    ./img/porrfolio-img/comp/imgmonitor.lg@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/porrfolio-img/comp/imgmonitor.lg.jpg 1x,
+                    ./img/porrfolio-img/comp/imgmonitor.lg@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <!--FOR DESCPOT-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tablet/imgmonitor.md.webp 1x,
+                    ./img/porrfolio-img/tablet/imgmonitor.md@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tablet/imgmonitor.md.jpg 1x,
+                    ./img/porrfolio-img/tablet/imgmonitor.md@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <!--FOR TELEPHONE-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tel/imgmonitor.sm.webp 1x,
+                    ./img/porrfolio-img/tel/imgmonitor.sm@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./img/porrfolio-img/tel/imgmonitor.sm@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                 <img class="portfolio-img"
+                    src="./img/porrfolio-img/tel/imgmonitor.sm.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="450"
+                    height="294"
+                  />
+                  </picture>
+                  <p class="portfolio-info">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
+                <div class="portfolio-cards">
+                  <h2 class="portfolio-title">Inspiration has no Borders</h2>
+                  <p class="portfolio-discription">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="potrfolio-cards list link">
+              <a class="radious link" href="">
+                <div class="portfolio-wrapper">
+                  <picture>
+                <!--FOR COMPUTER-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/comp/imgjournal.lg.webp 1x,
+                    ./img/porrfolio-img/comp/imgjournal.lg@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/porrfolio-img/comp/imgjournal.lg.jpg 1x,
+                    ./img/porrfolio-img/comp/imgjournal.lg@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <!--FOR DESCPOT-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tablet/imgjournal.md.webp 1x,
+                    ./img/porrfolio-img/tablet/imgjournal.md@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tablet/imgjournal.md.jpg 1x,
+                    ./img/porrfolio-img/tablet/imgjournal.md@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <!--FOR TELEPHONE-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tel/imgjournal.sm.webp 1x,
+                    ./img/porrfolio-img/tel/imgjournal.sm@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./img/porrfolio-img/tel/imgjournal.sm@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                 <img class="portfolio-img"
+                    src="./img/porrfolio-img/tel/imgjournal.sm.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="450"
+                    height="294"
+                  />
+                  </picture>
+                  <p class="portfolio-info">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
+                <div class="portfolio-cards">
+                  <h2 class="portfolio-title">Издание Limited Edition</h2>
+                  <p class="portfolio-discription">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="potrfolio-cards list link">
+              <a class="radious link" href="">
+                <div class="portfolio-wrapper">
+                  <picture>
+                <!--FOR COMPUTER-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/comp/imglabel.lg.webp 1x,
+                    ./img/porrfolio-img/comp/imglabel.lg@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/porrfolio-img/comp/imglabel.lg.jpg 1x,
+                    ./img/porrfolio-img/comp/imglabel.lg@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <!--FOR DESCPOT-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tablet/imglabel.md.webp 1x,
+                    ./img/porrfolio-img/tablet/imglabel.md@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tablet/imglabel.md.jpg 1x,
+                    ./iimg/porrfolio-img/tablet/imglabel.md@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <!--FOR TELEPHONE-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tel/imglabel.sm.webp 1x,
+                    ./img/porrfolio-img/tel/imgjournal.sm@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./img/porrfolio-img/tel/imglabel.sm@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                 <img class="portfolio-img"
+                    src="./img/porrfolio-img/tel/imglabel.sm.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="450"
+                    height="294"
+                  />
+                  </picture>
+                  <p class="portfolio-info">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
+                <div class="portfolio-cards">
+                  <h2 class="portfolio-title">Проект LAB</h2>
+                  <p class="portfolio-discription">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="potrfolio-cards list link">
+              <a class="radious link" href="">
+                <div class="portfolio-wrapper">
+                  <picture>
+                <!--FOR COMPUTER-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/comp/imghand.lg.webp 1x,
+                    ./img/porrfolio-img/comp/imghand.lg@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/porrfolio-img/comp/imghand.lg.jpg 1x,
+                    ./img/porrfolio-img/comp/imghand.lg@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <!--FOR DESCPOT-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tablet/imghand.md.webp 1x,
+                    ./img/porrfolio-img/tablet/imghand.md@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./iimg/porrfolio-img/tablet/imghand.md.jpg 1x,
+                    ./iimg/porrfolio-img/tablet/imghand.md@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <!--FOR TELEPHONE-->
+                <source
+                  srcset="
+                    ./img/porrfolio-img/tel/imghand.sm.webp 1x,
+                    ./img/porrfolio-img/tel/imghand.sm@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./img/porrfolio-img/tel/imghand.sm@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                 <img class="portfolio-img"
+                    src="./img/porrfolio-img/tel/imghand.sm.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="450"
+                    height="294"
+                  />
+                  </picture>
+                  <p class="portfolio-info">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
+                <div class="portfolio-cards">
+                  <h2 class="portfolio-title">Growing Business</h2>
+                  <p class="portfolio-discription">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+         <footer class="footer">
+      <div class="container footer-box">
+        <div class="footer-main">
+         
+
+         <div class="footer-combination">
+           <div class="logo-footer">
+ <a class="header-list-footer link" href="/"
+            >Web<span class="footer-logo">Studio</span></a>
+            
+          <address class="footer-addres link">
+            <ul class="footer-list list">
+              <li class="footer-list-item">
+                <a
+                  class="footer-item-first link"
+                  href="г. Киев, пр-т Леси Украинки, 26"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-item link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="footer-list-item">
+                <a class="footer-item link" href="mailoto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-social-linc">
+          <p class="footer-title">присоединяйтесь</p>
+          <ul class="footer-media link list">
+            <li class="footer-list-media">
+              <a class="footer-link" href="">
+                <svg class="footer-icons" width="20"
+                    height="20">
+                  <use
+                    
+                    href="./img/icons.svg/icons.svg.svg#instagram"
+                    
+                  ></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-list-media">
+              <a class="footer-link" href="">
+                <svg class="footer-icons" width="20"
+                    height="20">
+                  <use
+                    class=""
+                    href="./img/icons.svg/icons.svg.svg#twitter"
+                    
+                  ></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-list-media">
+              <a class="footer-link" href="">
+                <svg class="footer-icons" width="20"
+                    height="20">
+                  <use
+                    class=""
+                    href="./img/icons.svg/icons.svg.svg#faceboock"
+                    
+                  ></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-list-media">
+              <a class="footer-link" href="">
+                <svg class="footer-icons" width="20"
+                    height="20">
+                  <use
+                    class=""
+                    href="./img/icons.svg/icons.svg.svg#linkedin"
+                    
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+</div>
+
+        <div class="subscribe-box">
+          
+          
+            <p class="subscribe-txt">Подпишитесь на рассылку</p>
+            <div class="subscribe-form-fild">
+            <form >
+              <div class="form-fild">
+            <label class="subscribe-label" for="Femail"></label>
+            <input class="subscribe-input" name="Femail" id="Femail" type="text" placeholder="E-mail">
+            </form>
+          </div>
+          
+            <button class="subscribe-btn" type="submit">Подписаться
+            <svg class="subscribe-icons">
+                  <use
+                    href="./img/icons.svg/icons.svg.svg#icon-icon-send"
+                  ></use>
+                </svg>
+                </button>
+                
+          </div>
+      </div>
+    </footer>
+    <!--секция окна модального телефона -->
+    <div class="mobile-menu__tel" data-menu>
+      <ul class="mobile-menu__list list link">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="">Студия</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="">Портфолио</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="">Контакты</a>
+        </li>
+      </ul>
+
+      <div class="mobile-group">
+        <ul class="mobile-menu__contacts list">
+          <li class="mobile-menu__contacts-item">
+            <a class="mobile-menu__contacts-info link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu__contacts-item">
+            <a
+              class="mobile-menu__contacts-info link"
+              href="mailoto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__socials list">
+          <li class="mobile-menu__socials-item">
+            <a class="mobile-menu__social-link link" href="">Instagram</a>
+          </li>
+          <li class="mobile-menu__socials-item link">
+            <a class="mobile-menu__social-link link" href="">Twitter</a>
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a class="mobile-menu__social-link link" href="">Facebook</a>
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a class="mobile-menu__social-link link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--скрипты на модпльное окно-->
+    <script src="./js/menu.js"></script>
+    <!--скрипты на телефонное меню-->
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
