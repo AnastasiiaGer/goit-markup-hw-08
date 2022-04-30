@@ -24,6 +24,11 @@ margin-top: auto;
 .mobile-menu__tel.is-open{
 opacity: 1;
 transform: translateX(0);
+
+}
+.no-scroll{
+  overflow-y: hidden;
+ 
 }
 .mobile-menu__link {
   font-weight: 500;

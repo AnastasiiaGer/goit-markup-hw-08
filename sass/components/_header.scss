@@ -208,10 +208,10 @@ line-height: 1.16;
 .header__current:after {
   content: "";
   position: absolute;
-  bottom: 0px;
+  bottom: -5px;
   left: 0;
   display: block;
-  width: 100%;
+  width: 99%;
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
